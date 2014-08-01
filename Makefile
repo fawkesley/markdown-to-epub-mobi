@@ -11,6 +11,11 @@ all: $(EPUB_FILE) $(MOBI_FILE)
 clean:
 	rm -f build/*
 
+.PHONY: preview
+preview: $(MOBI_FILE)
+	ebook-viewer $(MOBI_FILE)
+
+
 $(EPUB_FILE): clean $(CHAPTERS) meta/title.txt meta/cover.jpg meta/stylesheet.css meta/metadata.xml
 	pandoc \
 		-o $(EPUB_FILE) \
