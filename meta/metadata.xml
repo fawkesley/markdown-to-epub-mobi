@@ -1,0 +1,6 @@
+<dc:title>My Ebook Title</dc:title>
+<dc:language>en-GB</dc:language>
+<dc:creator opf:file-as="Furley, Paul" opf:role="aut">Paul Furley</dc:creator>
+<dc:publisher>paulfurley.com</dc:publisher>
+<dc:date opf:event="publication">2014-08-01</dc:date>
+<dc:rights>Copyright © 2014 Paul M Furley</dc:rights>
