@@ -1,2 +1,3 @@
 build/*.epub
 build/*.mobi
+.*.swp
