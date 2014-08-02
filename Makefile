@@ -12,6 +12,16 @@ all: $(EPUB_FILE) $(MOBI_FILE) $(PDF_FILE)
 clean:
 	rm -f build/*
 
+.PHONY: epub
+epub: $(EPUB_FILE)
+
+.PHONY: mobi
+mobi: $(MOBI_FILE)
+
+.PHONY: pdf
+pdf: $(PDF_FILE)
+
+
 .PHONY: preview
 preview: $(MOBI_FILE)
 	ebook-viewer $(MOBI_FILE)
