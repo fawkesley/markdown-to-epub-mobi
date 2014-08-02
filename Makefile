@@ -2,10 +2,11 @@ CHAPTERS = $(wildcard chapters/*.md)
 
 EPUB_FILE = build/book.epub
 MOBI_FILE = build/book.mobi
+PDF_FILE = build/book.pdf
 
 
 .PHONY: all
-all: $(EPUB_FILE) $(MOBI_FILE)
+all: $(EPUB_FILE) $(MOBI_FILE) $(PDF_FILE)
 
 .PHONY: clean
 clean:
@@ -25,6 +26,14 @@ $(EPUB_FILE): clean $(CHAPTERS) meta/title.txt meta/cover.jpg meta/stylesheet.cs
 		--epub-stylesheet=meta/stylesheet.css \
 		--epub-metadata=meta/metadata.xml \
 		--table-of-contents
+
+$(PDF_FILE): $(CHAPTERS) meta/title.txt
+	pandoc \
+		-o $(PDF_FILE) \
+		meta/title.txt \
+		$(CHAPTERS) \
+		--toc
+
 
 $(MOBI_FILE): $(EPUB_FILE)
 	kindlegen $(EPUB_FILE)
