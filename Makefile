@@ -33,7 +33,7 @@ $(EPUB_FILE): clean $(CHAPTERS) meta/title.txt meta/cover.jpg meta/stylesheet.cs
 		meta/title.txt \
 		$(CHAPTERS) \
 		--epub-cover-image=meta/cover.jpg \
-		--epub-stylesheet=meta/stylesheet.css \
+		--css=meta/stylesheet.css \
 		--epub-metadata=meta/metadata.xml \
 		--table-of-contents
 
