@@ -1,6 +1,7 @@
 # Markdown to EPUB and MOBI eBook formats
 
-Thanks to [http://puppetlabs.com/blog/automated-ebook-generation-convert-markdown-epub-mobi-pandoc-kindlegen](http://puppetlabs.com/blog/automated-ebook-generation-convert-markdown-epub-mobi-pandoc-kindlegen)
+Thanks to https://web.archive.org/web/20160317041417/http://puppetlabs.com/blog/automated-ebook-generation-convert-markdown-epub-mobi-pandoc-kindlegen
+
 
 # Install (Ubuntu)
 
